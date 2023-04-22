@@ -23,7 +23,7 @@ function Layout() {
             <Nav.Link as={Link} to="contact" eventKey="Contact">Contact Us</Nav.Link>
             <Nav.Link as={Link} to="why-us" eventKey="Why">Why Us</Nav.Link>
             <Nav.Link as={Link} to="services" eventKey="Services">Services</Nav.Link>
-            <Nav.Link as={Link} to="prev-work*">Work We've Done</Nav.Link>
+            <Nav.Link as={Link} to="prev-work" eventKey="Prev">Work We've Done</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
