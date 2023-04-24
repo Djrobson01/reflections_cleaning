@@ -14,8 +14,6 @@ function EmailModal(props) {
 
     // sign up for free mail jet account and use their api key and token
     async function sendEmail(name, email, subject, message) {
-
-
         const params = {
             from_name: name,
             to_name: 'Nikki',
@@ -23,29 +21,14 @@ function EmailModal(props) {
             subject: subject,
             reply_to: email
         }
+
         emailjs.send('service_mn0lto8', 'template_b3uwcty', params, 'LfNqRCR2wDDXwK2Q0')
+        
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text)
         }, function(error) {
             console.log('FAILED . . .', error);
         })
-        // const data = JSON.stringify({
-        //     "Messages": [{
-        //         "From": [{"Email" : email, "Name": name}],
-        //         "To": {"Email": "djrobson2001@gmail.com", "Name": "Nikki Robson"},
-        //         "Subject": subject,
-        //         "TextPart": message
-        //     }]
-        // });
-
-        // const config = {
-        //     method: "POST",
-        //     data: data,
-        //     headers: {"Content-Type": "application/json"},
-        //     auth: {username: 'nrobson1978@gmail.com', password: 'mtsd1128!'}
-        // }
-
-        // fetch("https://api.mailjet.com/v3.1/send", config).then(res => console.log(res))
     }
     
     const handleClose = () => {
