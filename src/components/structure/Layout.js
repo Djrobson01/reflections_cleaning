@@ -30,7 +30,7 @@ function Layout() {
           <Nav className="me-auto" align="center" activeKey={page} onSelect={handleSelect}>
             <Nav.Link as={Link} to="/" eventKey="Home" style={checkActive("Home")}>Home</Nav.Link>
             <Nav.Link as={Link} to="services" eventKey="Services" style={checkActive("Services")}>Services</Nav.Link>
-            <Nav.Link as={Link} to="why-us" eventKey="Why" style={checkActive("Why")}>Why Us</Nav.Link>
+            <Nav.Link as={Link} to="about-us" eventKey="About" style={checkActive("About")}>About Us</Nav.Link>
             <Nav.Link as={Link} to="prev-work" eventKey="Prev" style={checkActive("Prev")}>Work We've Done</Nav.Link>
             <Navbar.Text><Phone /></Navbar.Text>
             <Navbar.Text>262-227-6007</Navbar.Text>
