@@ -23,12 +23,12 @@ function Layout() {
     <div>
       <Navbar bg="light" variant="light" >
         <Container align="center">
-          <Navbar.Brand as={Link} to="/">
+          <Navbar.Brand as={Link} to="/reflections_cleaning/">
             <img src={logo} alt="small main logo" width="30" height="30" className="d-inline-block align-top" /> {' '}
             Reflections Cleaning
           </Navbar.Brand>
           <Nav className="me-auto" align="center" activeKey={page} onSelect={handleSelect}>
-            <Nav.Link as={Link} to="/" eventKey="Home" style={checkActive("Home")}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/reflections_cleaning/" eventKey="Home" style={checkActive("Home")}>Home</Nav.Link>
             <Nav.Link as={Link} to="services" eventKey="Services" style={checkActive("Services")}>Services</Nav.Link>
             <Nav.Link as={Link} to="about-us" eventKey="About" style={checkActive("About")}>About Us</Nav.Link>
             <Nav.Link as={Link} to="prev-work" eventKey="Prev" style={checkActive("Prev")}>Work We've Done</Nav.Link>
