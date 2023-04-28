@@ -16,10 +16,16 @@
     "react-hook-form": "^7.43.9",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "ngrok": "^4.3.3",
+    "node-fetch": "^3.3.0",
+    "nodemon": "^2.0.20"
   },
   "scripts": {
     "start": "react-scripts start",
+    "tunnel": "ngrok http 53705",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
