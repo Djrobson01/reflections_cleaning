@@ -6,7 +6,7 @@ import { Phone, Email } from '../../icons/Icons';
 
 
 function Layout() {
-  const [page, setPage] = useState('home');
+  const [page, setPage] = useState('Home');
 
   const handleSelect = (eventKey) => {
     setPage(eventKey);
